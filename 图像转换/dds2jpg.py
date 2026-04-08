@@ -14,7 +14,7 @@ def convert_dds_to_jpg(source_folder, target_folder):
 
     # 遍历源文件夹中的文件
     for file_name in os.listdir(source_folder):
-        if file_name.lower().endswith('.dds'):
+        if file_name.lower().endswith('.png'):
             source_path = os.path.join(source_folder, file_name)
             target_path = os.path.join(target_folder, file_name.rsplit('.', 1)[0] + '.jpg')
 
